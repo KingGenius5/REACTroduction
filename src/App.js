@@ -1,16 +1,13 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-
-function Heading() {
-  const str = 'Foo Bar!'
-
-  return <h1>{str}</h1>
-}
+import Title from './Title';
 
 function App() {
   return (
-    <Heading></Heading>
+    <div className="App">
+      <Title />
+    </div>
   );
 }
 
