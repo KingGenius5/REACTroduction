@@ -3,6 +3,7 @@
 import React from 'react';
 import POPOSSpace from './POPOSSpace';
 import './POPOSList.css';
+import data from './sfpopos-data.json'
 
 function POPOSList() {
   return (
@@ -40,5 +41,11 @@ function POPOSList() {
     </div>
   )
 }
+
+const titles = data.map((obj) => {
+  return <h1>{obj.title}</h1>
+})
+
+console.log(titles)
 
 export default POPOSList
